@@ -3,6 +3,7 @@ const endpoint =
 
 const cities = [];
 
+// console.log(fetch(endpoint))
 fetch(endpoint).then(blob => blob.json()).then(data => cities.push(...data));
 
 function findMatches(wordToMatch, cities) {
